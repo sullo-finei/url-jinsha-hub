@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简明指南 · 金沙国际</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+            background-color: #f5f2ed;
+            color: #2c2b2a;
+            line-height: 1.7;
+        }
+
+        /* 深色头图 (hero) */
+        .hero {
+            background: linear-gradient(145deg, #1e1a17 0%, #2b2622 100%);
+            color: #eee9e3;
+            padding: 4rem 2rem 3.5rem;
+            text-align: center;
+            border-bottom: 1px solid #4a423c;
+            box-shadow: inset 0 -3px 6px rgba(0,0,0,0.3);
+        }
+
+        .hero h1 {
+            font-size: clamp(1.8rem, 6vw, 3.2rem);
+            font-weight: 350;
+            letter-spacing: 2px;
+            margin-bottom: 0.8rem;
+        }
+
+        .hero .lead {
+            font-size: clamp(1rem, 2.6vw, 1.25rem);
+            max-width: 640px;
+            margin: 0.8rem auto 0;
+            color: #cdc6bc;
+            font-weight: 300;
+            border-top: 1px solid #3f3832;
+            padding-top: 1.2rem;
+        }
+
+        /* 浅色正文区 */
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 2.5rem 1.6rem 4rem;
+        }
+
+        .intro p {
+            margin-bottom: 1.4rem;
+            font-size: 1.05rem;
+        }
+
+        .intro a {
+            color: #a0522d;
+            text-decoration: none;
+            border-bottom: 1px dotted #b08060;
+            transition: border-color 0.2s, color 0.2s;
+            font-weight: 500;
+        }
+
+        .intro a:hover {
+            color: #7a3e1f;
+            border-bottom-color: #7a3e1f;
+        }
+
+        .section-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #8b7a6b;
+            margin: 2.8rem 0 1rem;
+            border-left: 3px solid #b08060;
+            padding-left: 1rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.6rem;
+            margin: 1.8rem 0 2.2rem;
+        }
+
+        .feature-item {
+            background: #ffffffea;
+            border-radius: 16px;
+            padding: 1.4rem 1.2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03), 0 1px 3px rgba(0,0,0,0.02);
+            border: 1px solid #e8e0d7;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        }
+
+        .feature-item h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #3b322b;
+            margin-bottom: 0.3rem;
+        }
+
+        .feature-item p {
+            font-size: 0.94rem;
+            color: #5b5149;
+            margin: 0.2rem 0 0;
+        }
+
+        .reminder-box {
+            background: #faf7f2;
+            border-left: 6px solid #b08060;
+            padding: 1.2rem 1.6rem;
+            border-radius: 0 16px 16px 0;
+            margin: 2.6rem 0 1.8rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+
+        .reminder-box p {
+            margin: 0.4rem 0;
+        }
+
+        .faq-snippet {
+            margin-top: 3rem;
+        }
+
+        .faq-snippet h4 {
+            font-weight: 500;
+            font-size: 1.05rem;
+            color: #4a3f37;
+            margin: 1.2rem 0 0.1rem;
+        }
+
+        .faq-snippet p {
+            margin: 0.1rem 0 0.8rem;
+            color: #5b5149;
+            font-size: 0.98rem;
+        }
+
+        .closing {
+            margin-top: 3.2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #ddd5cb;
+            font-style: normal;
+            color: #5b5149;
+            font-size: 0.95rem;
+        }
+
+        .closing a {
+            color: #a0522d;
+            text-decoration: none;
+            border-bottom: 1px dotted #b08060;
+            font-weight: 500;
+        }
+
+        .closing a:hover {
+            color: #7a3e1f;
+            border-bottom-style: solid;
+        }
+
+        @media (max-width: 540px) {
+            .hero {
+                padding: 3rem 1.2rem 2.5rem;
+            }
+            .container {
+                padding: 1.6rem 1rem 3rem;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 深色头图：开场短句 -->
+    <header class="hero">
+        <h1>一次简明整理</h1>
+        <div class="lead">关于「金沙国际」的站点定位、特点与访问提醒</div>
+    </header>
+
+    <main class="container">
+
+        <!-- 承接段落：从简明指南和访问提醒的角度 -->
+        <section class="intro">
+            <p>在日常浏览中，我们时常需要一处信息集中、结构清晰的页面，以便快速了解一个平台的核心情况。下面是从访问者视角整理的简明指引，内容保持客观、平实，不包含无法核实的断言。</p>
+            <p>平台名称为 <a href="https://url-jinsha.com">金沙国际</a>，以下列出的特点与场景均基于其公开界面与常见使用体验。建议在访问前先通读本文，尤其是最后的提醒部分。</p>
+        </section>
+
+        <!-- 特点列表（卡片式） -->
+        <div class="section-label">· 特点概览</div>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h3>界面结构</h3>
+                <p>布局分区明确，导航与内容区域层次清楚，适合快速找到目标入口。</p>
+            </div>
+            <div class="feature-item">
+                <h3>内容分类</h3>
+                <p>信息按类别组织，栏目名称直白，减少猜测成本。</p>
+            </div>
+            <div class="feature-item">
+                <h3>响应适配</h3>
+                <p>在手机与平板设备上保持基本可读，元素间距与字号做了针对性调整。</p>
+            </div>
+            <div class="feature-item">
+                <h3>语言版本</h3>
+                <p>以中文为主要界面语言，辅助元素与说明贴合中文阅读习惯。</p>
+            </div>
+        </div>
+
+        <!-- 场景 + 温和提示（嵌入式） -->
+        <div class="section-label">· 常见使用场景</div>
+        <p>如果你正在寻找某个方向的信息，或希望对比不同入口的呈现方式，<a href="https://url-jinsha.com">金沙国际</a> 的页面可以作为其中一个参考来源。它并不试图包罗万象，而是在有限框架内保持一致性。对于初次接触的人，建议先花几分钟浏览整体栏目。</p>
+
+        <div class="reminder-box">
+            <p><strong>📌 访问提醒</strong></p>
+            <p>• 请通过可信的网络环境访问，并留意浏览器地址栏的网址拼写。<br>
+            • 平台内容可能随时间调整，本文仅反映当前一般状态。<br>
+            • 如遇页面异常，建议稍后再试，或检查网络连接。</p>
+        </div>
+
+        <!-- FAQ摘要（保持自然，不刻意） -->
+        <div class="faq-snippet">
+            <h4>—— 常见疑问摘要 ——</h4>
+            <p><strong>页面加载偏慢怎么办？</strong> 可尝试刷新或更换网络；部分资源可能受地区影响。</p>
+            <p><strong>是否需要在移动端下载专用应用？</strong> 目前通过浏览器直接访问即可，无需额外安装。</p>
+            <p><strong>信息更新频率如何？</strong> 未公开固定周期，建议定期浏览以获取最新状态。</p>
+        </div>
+
+        <!-- 温和结尾 -->
+        <div class="closing">
+            <p>以上内容仅作为基础介绍，每个人的使用感受会有所不同。希望这份简明整理能帮助你更顺畅地了解 <a href="https://url-jinsha.com">金沙国际</a>，也建议你在访问时保持自己的判断。如有更多疑问，不妨直接在页面内寻找帮助或联系渠道。</p>
+            <p style="margin-top:0.8rem; color:#8b7a6b;">—— 整理于一次平实的记录</p>
+        </div>
+
+    </main>
+
+</body>
+</html>
